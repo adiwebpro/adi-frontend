@@ -18,7 +18,7 @@ const Portfolio = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('https://adi-backend-nine.vercel.app/api/projects/');
+      const response = await fetch('https://adi-backend-one.vercel.app/api/projects/');
       if (!response.ok) {
         throw new Error('Failed to fetch projects');
       }
@@ -43,7 +43,7 @@ const Portfolio = () => {
 
   const handleDeleteProject = async (id) => {
     try {
-      const response = await fetch(`https://adi-backend-nine.vercel.app/api/projects/${id}`, {
+      const response = await fetch(`https://adi-backend-one.vercel.app/api/projects/${id}`, {
         method: 'DELETE'
       });
       
@@ -62,7 +62,7 @@ const Portfolio = () => {
       let response;
       if (editingProject) {
         // Update existing project
-        response = await fetch(`https://adi-backend-nine.vercel.app/api/projects/${editingProject.id}`, {
+        response = await fetch(`https://adi-backend-one.vercel.app/api/projects/${editingProject.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ const Portfolio = () => {
         });
       } else {
         // Add new project
-        response = await fetch('https://adi-backend-nine.vercel.app/api/projects/', {
+        response = await fetch('https://adi-backend-one.vercel.app/api/projects/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
