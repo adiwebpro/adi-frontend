@@ -1,0 +1,120 @@
+/* Frontend/src/pages/Contact.css */
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 2rem;
+  background: var(--light-color);
+  border-radius: 10px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info-item i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.error-message {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: rgba(231, 76, 60, 0.1);
+  border-radius: 4px;
+}
+
+.success-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-message h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
