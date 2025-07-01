@@ -17,16 +17,10 @@ const Footer = () => {
           <h3>Bagus Adi Suratno</h3>
           <p>Fullstack Developer JavaScript yang berfokus pada pembuatan pengalaman web modern dengan semangat dan presisi.</p>
           <div className="footer-social">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/adiwebpro/adi-frontend" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/adi_kheir?igsh=MTF4dW44eHh1OHY4" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
