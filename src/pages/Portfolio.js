@@ -1,4 +1,3 @@
-// Frontend/src/pages/Portfolio.js
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
 import ProjectCard from '../pages/ProjectCard';
@@ -12,7 +11,7 @@ const Portfolio = () => {
   const [editingProject, setEditingProject] = useState(null);
 
   useEffect(() => {
-    document.title = "My Portfolio | Projects";
+    document.title = "Portofolio Saya | Proyek";
     fetchProjects();
   }, []);
 
@@ -20,7 +19,7 @@ const Portfolio = () => {
     try {
       const response = await fetch('https://adi-backend-one.vercel.app/api/projects/');
       if (!response.ok) {
-        throw new Error('Failed to fetch projects');
+        throw new Error('Gagal mengambil data proyek');
       }
       const data = await response.json();
       setProjects(data);
@@ -46,11 +45,11 @@ const Portfolio = () => {
       const response = await fetch(`https://adi-backend-one.vercel.app/api/projects/${id}`, {
         method: 'DELETE'
       });
-      
+
       if (!response.ok) {
-        throw new Error('Failed to delete project');
+        throw new Error('Gagal menghapus proyek');
       }
-      
+
       setProjects(projects.filter(project => project.id !== id));
     } catch (err) {
       setError(err.message);
@@ -61,7 +60,7 @@ const Portfolio = () => {
     try {
       let response;
       if (editingProject) {
-        // Update existing project
+        // Perbarui proyek yang sudah ada
         response = await fetch(`https://adi-backend-one.vercel.app/api/projects/${editingProject.id}`, {
           method: 'PUT',
           headers: {
@@ -70,7 +69,7 @@ const Portfolio = () => {
           body: JSON.stringify(projectData)
         });
       } else {
-        // Add new project
+        // Tambah proyek baru
         response = await fetch('https://adi-backend-one.vercel.app/api/projects/', {
           method: 'POST',
           headers: {
@@ -79,42 +78,42 @@ const Portfolio = () => {
           body: JSON.stringify(projectData)
         });
       }
-      
+
       if (!response.ok) {
-        throw new Error(editingProject ? 'Failed to update project' : 'Failed to add project');
+        throw new Error(editingProject ? 'Gagal memperbarui proyek' : 'Gagal menambahkan proyek');
       }
-      
+
       const updatedProject = await response.json();
-      
+
       if (editingProject) {
-        setProjects(projects.map(p => 
+        setProjects(projects.map(p =>
           p.id === editingProject.id ? updatedProject : p
         ));
       } else {
         setProjects([...projects, updatedProject]);
       }
-      
+
       setShowForm(false);
     } catch (err) {
       setError(err.message);
     }
   };
 
-  if (loading) return <div className="container">Loading...</div>;
-  if (error) return <div className="container">Error: {error}</div>;
+  if (loading) return <div className="container">Memuat...</div>;
+  if (error) return <div className="container">Terjadi kesalahan: {error}</div>;
 
   return (
     <div className="portfolio-page">
       <section className="portfolio-section">
         <div className="container">
-          <h2 className="section-title">My Projects</h2>
-          
+          <h2 className="section-title">Proyek Saya</h2>
+
           <div className="portfolio-actions">
             <button onClick={handleAddProject} className="btn">
-              Add New Project
+              Tambah Proyek Baru
             </button>
           </div>
-          
+
           {showForm && (
             <ProjectForm 
               project={editingProject}
@@ -122,7 +121,7 @@ const Portfolio = () => {
               onCancel={() => setShowForm(false)}
             />
           )}
-          
+
           <div className="projects-grid">
             {projects.map(project => (
               <ProjectCard 
