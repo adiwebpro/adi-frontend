@@ -32,6 +32,7 @@ const Footer = () => {
             <li><a href="/">Beranda</a></li>
             <li><a href="/about">Tentang</a></li>
             <li><a href="/portfolio">Portofolio</a></li>
+            <li><a href="/portfolio">Blog</a></li>
             <li><a href="/contact">Kontak</a></li>
           </ul>
         </div>
