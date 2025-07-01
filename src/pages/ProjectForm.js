@@ -1,4 +1,3 @@
-// Frontend/src/components/ProjectForm.js
 import React, { useState, useEffect } from 'react';
 import './ProjectForm.css';
 
@@ -43,11 +42,11 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
   return (
     <div className="project-form-overlay">
       <div className="project-form">
-        <h3>{project ? 'Edit Project' : 'Add New Project'}</h3>
-        
+        <h3>{project ? 'Edit Proyek' : 'Tambah Proyek Baru'}</h3>
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Title</label>
+            <label>Judul Proyek</label>
             <input
               type="text"
               name="title"
@@ -56,9 +55,9 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
               required
             />
           </div>
-          
+
           <div className="form-group">
-            <label>Description</label>
+            <label>Deskripsi</label>
             <textarea
               name="description"
               value={formData.description}
@@ -67,9 +66,9 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
               rows="4"
             ></textarea>
           </div>
-          
+
           <div className="form-group">
-            <label>Technologies (comma separated)</label>
+            <label>Teknologi (pisahkan dengan koma)</label>
             <input
               type="text"
               name="technologies"
@@ -78,9 +77,9 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
               required
             />
           </div>
-          
+
           <div className="form-group">
-            <label>Image URL</label>
+            <label>URL Gambar</label>
             <input
               type="text"
               name="imageUrl"
@@ -88,9 +87,9 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
               onChange={handleChange}
             />
           </div>
-          
+
           <div className="form-group">
-            <label>Live URL</label>
+            <label>URL Live Demo</label>
             <input
               type="text"
               name="liveUrl"
@@ -98,13 +97,13 @@ const ProjectForm = ({ project, onSubmit, onCancel }) => {
               onChange={handleChange}
             />
           </div>
-          
+
           <div className="form-actions">
             <button type="button" onClick={onCancel} className="btn btn-outline">
-              Cancel
+              Batal
             </button>
             <button type="submit" className="btn">
-              {project ? 'Update' : 'Add'} Project
+              {project ? 'Perbarui' : 'Tambahkan'} Proyek
             </button>
           </div>
         </form>
