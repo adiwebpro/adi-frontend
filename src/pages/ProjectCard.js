@@ -1,4 +1,3 @@
-// Frontend/src/components/ProjectCard.js
 import React from 'react';
 import './ProjectCard.css';
 
@@ -23,13 +22,13 @@ const ProjectCard = ({ project, onEdit, onDelete }) => {
             rel="noopener noreferrer"
             className="btn"
           >
-            View Live
+            Lihat Demo
           </a>
           <button onClick={() => onEdit(project)} className="btn btn-outline">
             Edit
           </button>
           <button onClick={() => onDelete(project.id)} className="btn btn-danger">
-            Delete
+            Hapus
           </button>
         </div>
       </div>
