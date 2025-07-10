@@ -8,13 +8,13 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'React', level: 85 },
-    { name: 'Node.js', level: 80 },
-    { name: 'Express', level: 75 },
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'Git', level: 85 }
-  ];
+  { name: 'HTML/CSS', level: 80 },
+  { name: 'JavaScript', level: 70 },
+  { name: 'React', level: 70 },
+  { name: 'Node.js', level: 70 },
+  { name: 'SQL / Database', level: 70 },
+];
+
 
   return (
     <div className="about-page">
@@ -25,12 +25,12 @@ const About = () => {
             <div className="about-text">
               <h3>Siapa Saya</h3>
               <p>
-                Saya adalah seorang Fullstack Developer JavaScript yang bersemangat dengan pengalaman lebih dari 3 tahun dalam membangun aplikasi web.
-                Saya ahli dalam menciptakan antarmuka yang responsif dan ramah pengguna menggunakan React, serta sistem backend yang kuat menggunakan Node.js.
+                Saya adalah seorang Web Developer yang memiliki ketertarikan besar dalam membangun aplikasi web yang fungsional dan mudah digunakan. 
+                Saya fokus pada pengembangan antarmuka yang responsif serta memahami dasar-dasar pengelolaan sistem backend untuk mendukung kinerja aplikasi.
               </p>
               <p>
-                Di luar aktivitas ngoding, saya senang mendaki, membaca blog teknologi, dan berkontribusi pada proyek open-source.
-                Saya percaya pada pembelajaran berkelanjutan dan pentingnya mengikuti perkembangan teknologi web terbaru.
+                Di luar dunia pengembangan, saya gemar mendaki, membaca blog teknologi, dan berkontribusi pada proyek open-source. 
+                Saya percaya bahwa pembelajaran berkelanjutan sangat penting dalam dunia teknologi yang terus berkembang, dan saya selalu siap mempelajari hal-hal baru untuk mengembangkan kemampuan dan wawasan saya sebagai developer.
               </p>
               <div className="personal-info">
                 <div>
