@@ -13,7 +13,7 @@ const Home = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="fade-in">Halo, saya <span>Bagus Adi Suratno</span></h1>
-          <h2 className="fade-in">Pengembang JavaScript Fullstack</h2>
+          <h2 className="fade-in">Web Developer</h2>
           <p className="fade-in">
             Saya membangun pengalaman digital yang luar biasa dengan teknologi web modern.
           </p>
