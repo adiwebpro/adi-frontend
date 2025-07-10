@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-column">
           <h3>Bagus Adi Suratno</h3>
-          <p>Fullstack Developer JavaScript yang berfokus pada pembuatan pengalaman web modern dengan semangat dan presisi.</p>
+          <p>Web Developer</p>
           <div className="footer-social">
             <a href="https://github.com/adiwebpro/adi-frontend" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
@@ -31,7 +31,7 @@ const Footer = () => {
             <li><a href="/">Home</a></li>
             <li><a href="/about">Tentang Saya</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/blog">Blog</a></li>
+           
             <li><a href="/contact">Kontak</a></li>
           </ul>
         </div>
