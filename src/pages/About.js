@@ -11,6 +11,7 @@ const About = () => {
   { name: 'HTML/CSS', level: 80 },
   { name: 'JavaScript', level: 70 },
   { name: 'React', level: 70 },
+  { name: 'Phyton', level: 70 },
   { name: 'Node.js', level: 70 },
   { name: 'SQL / Database', level: 70 },
 ];
