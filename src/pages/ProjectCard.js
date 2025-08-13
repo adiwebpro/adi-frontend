@@ -23,13 +23,7 @@ const ProjectCard = ({ project, onEdit, onDelete }) => {
             className="btn"
           >
             Lihat Demo
-          </a>
-          <button onClick={() => onEdit(project)} className="btn btn-outline">
           
-          </button>
-          <button onClick={() => onDelete(project.id)} className="btn btn-danger">
-            
-          </button>
         </div>
       </div>
     </div>
