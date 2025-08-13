@@ -43,7 +43,7 @@ const Portfolio = () => {
   const handleDeleteProject = async (id) => {
     try {
       const response = await fetch(`https://adi-backend-one.vercel.app/api/projects/${id}`, {
-        method: 'DELETE'
+        method: ''
       });
 
       if (!response.ok) {
@@ -110,7 +110,7 @@ const Portfolio = () => {
 
           <div className="portfolio-actions">
             <button onClick={handleAddProject} className="btn">
-              Tambah Proyek Baru
+              
             </button>
           </div>
 
